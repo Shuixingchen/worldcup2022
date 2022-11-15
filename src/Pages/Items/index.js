@@ -1,5 +1,3 @@
-import walletStore from '../../store/WalletStore';
-import { observer } from 'mobx-react-lite'
 import { Link } from 'react-router-dom';
 
 function Items(props) {
@@ -13,4 +11,4 @@ function Items(props) {
     )
 }
 
-export default observer(Items)
+export default Items
