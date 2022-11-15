@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+
+// 路由配置
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Layout from './Pages/Layout'
+import NoFound from './Pages/404'
+import Home from './Pages/Home'
+import Metamask from './Components/MetaMask'
+import UseMox from './Components/Demo/UseMox'
+import HookDemo from './Components/Demo/HookDemo'
+import UseEffectDemo from './Components/Demo/UseEffectDemo'
+import Deposit from './Pages/Deposit'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Router>
+        <Routes>
+          <Route path='/' element={<Layout/>}>
+            <Route index element={<Home/>}/>
+            <Route path='mox' element={<UseMox/>}/>
+            <Route path='hook' element={<HookDemo/>}/>
+            <Route path='effect' element={<UseEffectDemo/>}/>
+            <Route path='deposit' element={<Deposit/>}/>
+          </Route>
+          <Route path='*' element={<NoFound/>} />
+        </Routes>
+      </Router>
+  )
 }
 
 export default App;
