@@ -1,4 +1,3 @@
-import './headers.css'
 import {useState} from 'react'
 import Metamask from '../../Components/MetaMask';
 
