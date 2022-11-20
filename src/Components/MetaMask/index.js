@@ -5,13 +5,18 @@ import { useEffect, useState } from 'react';
 import walletStore from '../../store/WalletStore';
 
 function Metamask() {
-  
-  function connectToMetamask() {
-    walletStore.setWallet()
+  // 不能直接读取walletStore来渲染
+  async function connectToMetamask() {
+    await walletStore.setWallet()
+  }
+  function limitWords(txt){
+    var str = txt;
+    str = str.substr(0,5) + '...'+str.substr(-4);
+    return str;
   }
 
   function renderMetamask() {
-    if (walletStore.selectedAddress === "") {
+    if (walletStore.selectedAddress === "" && walletStore.chainID === 0) {
       return (
         <div className="text-end">
           <button onClick={connectToMetamask} type="button" className="btn btn-outline-light me-2">Connect Wallet</button>
@@ -19,7 +24,7 @@ function Metamask() {
       )
     } else {
       return (
-          <div className='text-end'>{walletStore.selectedAddress}</div>
+          <div className='text-end'>chainID:{walletStore.chainID} accounts: {limitWords(walletStore.selectedAddress)}</div>
       );
     }
   }

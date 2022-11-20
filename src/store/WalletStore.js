@@ -1,5 +1,6 @@
 import { makeAutoObservable } from "mobx"
 import { ethers } from "ethers";
+import chainList from '../json/chain.json'
 
 class WalletStore {
     provider
@@ -7,16 +8,41 @@ class WalletStore {
     balance
     balanceInEther
     selectedAddress = ""
+    chainID = 0
+    chainInfo
     constructor() {
         makeAutoObservable(this)
     }
-
+    getChainInfo = (chainID)=> {
+        for (let elem of chainList.values()) {
+            if (chainID == elem.chainid) {
+                this.chainInfo = elem
+            }
+        }
+    }
     setWallet = async () => {
         this.provider = new ethers.providers.Web3Provider(window.ethereum)
         this.accounts = await this.provider.send("eth_requestAccounts", []);
         this.selectedAddress = this.accounts[0]
         this.balance = await this.provider.getBalance(this.selectedAddress);
         this.balanceInEther = ethers.utils.formatEther(this.balance);
+        this.chainID = window.ethereum.networkVersion
+        this.getChainInfo(this.chainID)
+        let self = this
+        // console.log(`address:${this.balanceInEther} balance: ${this.balance}, balanceETh: ${this.balanceInEther}`)
+        window.ethereum.on('chainChanged', async function (networkIDstring) {
+            self.chainID = parseInt(networkIDstring, 16)
+            self.getChainInfo(self.chainID)
+            self.balance = await self.provider.getBalance(self.selectedAddress);
+            self.balanceInEther = ethers.utils.formatEther(self.balance);
+            console.log(`address:${self.selectedAddress} balance: ${this.balance}, balanceETh: ${this.balanceInEther}`)
+        })
+        window.ethereum.on('accountsChanged', async function (accounts) {
+            self.selectedAddress = accounts[0]
+            self.balance = await self.provider.getBalance(self.selectedAddress);
+            self.balanceInEther = ethers.utils.formatEther(self.balance);
+            // console.log(`address: ${self.selectedAddress} balance: ${self.balance}, balanceETh: ${self.balanceInEther}`)
+        })
     }
 }
 
