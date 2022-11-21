@@ -17,8 +17,11 @@ class WalletStore {
         for (let elem of chainList.values()) {
             if (chainID == elem.chainid) {
                 this.chainInfo = elem
+                return
             }
         }
+        // 没有找到，弹窗
+        alert("Only support Mumbai(chainid:80001) and Polygon Mainnet(chainid:137)")
     }
     setWallet = async () => {
         this.provider = new ethers.providers.Web3Provider(window.ethereum)

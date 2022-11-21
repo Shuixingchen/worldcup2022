@@ -32,6 +32,7 @@ function Deposit() {
           console.log("bb")
           return
         }
+        console.log(`contractAddr: ${location.state.contractAddr}`)
         const Game = new ethers.Contract(location.state.contractAddr, GameABI.abi, walletStore.provider);
         let awinBalance = await Game.getBalance(location.state.playAID);
         let bwinBalance = await Game.getBalance(location.state.playBID);
@@ -65,9 +66,9 @@ function Deposit() {
       }
       console.log(data)
       const GameFactory = new ethers.Contract(walletStore.chainInfo.worldcupaddr, GameFactoryABI.abi, walletStore.provider);
-      const signer = walletStore.provider.getSigner()
+      const signer = await walletStore.provider.getSigner()
       const amountWei = ethers.utils.parseEther(data.amount);
-      console.log(`worldcup: %{walletStore.chainInfo.worldcupaddr}, signer: ${signer.Address}, amountwei: ${amountWei}`)
+      console.log(`worldcup: ${walletStore.chainInfo.worldcupaddr}, signer: ${await signer.getAddress()}, amountwei: ${amountWei}`)
       let depositTx = await GameFactory.connect(signer).deposit(data.playAID,data.playBID,data.startTime,data.whichWin, {value: amountWei});
       console.log(`depostiTx: ${depositTx.hash}`);
       setWaitTx(true)

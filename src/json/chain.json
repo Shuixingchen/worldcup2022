@@ -1,21 +1,9 @@
 [
     {
-        "chainid": 1,
-        "name": "Ethereum Mainnet",
-        "units": "ETH",
-        "worldcupaddr": "aaaa"
-    },
-    {
         "chainid": 5,
         "name": "Goerli",
         "units": "ETH",
         "worldcupaddr": "0x6CEdA67764DD92Da6CF1BafE0A65d6388b6E0c96"
-    },
-    {
-        "chainid": 56,
-        "name": "Binance Smart Chain Mainnet",
-        "units": "BNB",
-        "worldcupaddr": "cccc"
     },
     {
         "chainid": 137,
