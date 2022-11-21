@@ -23,6 +23,7 @@ class UseContract extends Component {
       this.setState({ block })
     })
 
+    // 合约读方法
     const daiContract = new ethers.Contract('0x6b175474e89094c44da98b954eedeac495271d0f', ERC20_ABI, provider);
     const tokenName = await daiContract.name();
     const tokenBalance = await daiContract.balanceOf(accounts[0]);
@@ -33,6 +34,7 @@ class UseContract extends Component {
   }
 
   async sendDaiTo(to, amountInEther) {
+    // 合约写方法
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner()
 

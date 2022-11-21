@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 import walletStore from '../../store/WalletStore';
 
 function Metamask() {
-  // 不能直接读取walletStore来渲染
   async function connectToMetamask() {
     await walletStore.setWallet()
   }
+
   function limitWords(txt){
     var str = txt;
     str = str.substr(0,5) + '...'+str.substr(-4);

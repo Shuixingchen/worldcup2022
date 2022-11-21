@@ -1,3 +1,4 @@
+import { ethers } from "ethers";
 
 
 export function showDate(timestamp) {
@@ -10,3 +11,9 @@ export function showDate(timestamp) {
     let s = date.getSeconds(); 
     return Y+M+D+h+m+s
 }
+
+export function CalculateToPercentage(num, all) {
+    let data1 = (num*100/all).toFixed(2)
+    return data1
+}
+  

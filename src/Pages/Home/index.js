@@ -1,7 +1,8 @@
 
 import { useEffect,useState } from "react";
 import axios from "axios";
-import { Link, useNavigate } from 'react-router-dom';
+import { observer } from 'mobx-react-lite'
+import { useNavigate } from 'react-router-dom';
 import {showDate} from '../../Components/Utils/time'
 
 function Home(){
@@ -17,6 +18,7 @@ function Home(){
     fetchData()
   },[])
 
+  // 路由跳转,带上参数
   const navigate = useNavigate()
   const jumpToDeposit = (item)=>{
     navigate('/deposit', {state:{id:item.ID,
@@ -26,7 +28,8 @@ function Home(){
       playBID:item.PlayBID,
       playAIcon:item.PlayAIcon,
       playBIcon:item.PlayBIcon,
-      startTime:showDate(item.StartTime)
+      startTime:item.StartTime,
+      contractAddr:item.ContractAddr
     }})
   }
 
@@ -62,4 +65,4 @@ function Home(){
   )
 }
 
-export default Home;
+export default observer(Home);
