@@ -10,7 +10,7 @@ function Home(){
 
   useEffect(()=>{
     const fetchData = async ()=>{
-      const res = await axios.get('http://localhost:8080/worldcup/getallgame')
+      const res = await axios.get('http://54.187.77.121:8080/worldcup/getallgame')
       if (res.data.data.length > 0) {
         setList(res.data.data)
       }
