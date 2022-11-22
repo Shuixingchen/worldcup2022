@@ -148,7 +148,7 @@ function Deposit() {
               <label forhtml="amount">
                 Deposit Amount: 
               </label>
-              <input type="number" id="amount" min={0.01} step={0.01} {...register("amount",{min:0.01, required:true})} />
+              <input className="form-control" type="number" id="amount" min={0.01} step={0.01} {...register("amount",{min:0.01, required:true})} />
             </div>
             {walletStore.selectedAddress === "" ? <div className="col-6 offset-md-3 primary">you should connect your wallet</div>:
               <div className="col-6 offset-md-3">
