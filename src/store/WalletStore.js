@@ -34,6 +34,7 @@ class WalletStore {
         let self = this
         // console.log(`address:${this.balanceInEther} balance: ${this.balance}, balanceETh: ${this.balanceInEther}`)
         window.ethereum.on('chainChanged', async function (networkIDstring) {
+            self.provider = new ethers.providers.Web3Provider(window.ethereum)
             self.chainID = parseInt(networkIDstring, 16)
             self.getChainInfo(self.chainID)
             self.balance = await self.provider.getBalance(self.selectedAddress);
@@ -41,6 +42,7 @@ class WalletStore {
             console.log(`address:${self.selectedAddress} balance: ${this.balance}, balanceETh: ${this.balanceInEther}`)
         })
         window.ethereum.on('accountsChanged', async function (accounts) {
+            self.provider = new ethers.providers.Web3Provider(window.ethereum)
             self.selectedAddress = accounts[0]
             self.balance = await self.provider.getBalance(self.selectedAddress);
             self.balanceInEther = ethers.utils.formatEther(self.balance);

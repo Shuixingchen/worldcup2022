@@ -25,6 +25,7 @@ function Home(){
   }
   useEffect(()=>{
     const fetchData = async ()=>{
+      console.log(walletStore.chainID)
       if (walletStore.selectedAddress === "") {
         console.log("ddds")
         return
@@ -52,10 +53,11 @@ function Home(){
         g.PlayBIcon = b.icon;
         gameList[index] = g
       }
+      console.log(`gamelist: ${gameList.length}`)
       setList(gameList)
     }
     fetchData()
-  },[walletStore,isWallet])
+  },[walletStore.chainID,isWallet])
 
   // 路由跳转,带上参数
   const navigate = useNavigate()
