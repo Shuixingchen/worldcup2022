@@ -152,7 +152,7 @@ function Deposit() {
             </div>
             {walletStore.selectedAddress === "" ? <div className="col-6 offset-md-3 primary">you should connect your wallet</div>:
               <div className="col-6 offset-md-3">
-                <span>Your Address: {walletStore.selectedAddress}    <br/>balance: {walletStore.balanceInEther}</span>
+                <span>Your Address: {walletStore.selectedAddress}    <br/>balance: {walletStore.balanceInEther} Matic</span>
               </div>
             }
             {txHash==="" ? "": 
@@ -162,9 +162,9 @@ function Deposit() {
             </div></div>
             }
             {/* wait tx */}
-            {waitTx ? <div class="text-center">
-              <div class="spinner-border" role="status">
-                <span class="sr-only"></span>
+            {waitTx ? <div className="text-center">
+              <div className="spinner-border" role="status">
+                <span className="sr-only"></span>
               </div>
             </div>:""}
             
