@@ -9,7 +9,7 @@
         "chainid": 137,
         "name": "Polygon Mainnet",
         "uint": "MATIC",
-        "worldcupaddr": "dddd"
+        "worldcupaddr": "0x1C9Bb34fEA2B99a5E653B3B0ea6b610B4C7b7E87"
     },
     {
         "chainid": 80001,
