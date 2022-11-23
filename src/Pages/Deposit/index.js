@@ -144,12 +144,15 @@ function Deposit() {
               </div>
             </div>
             <div className="clearfix" style={{"marginBottom":"10px"}}></div>
+            {location.state.startTime*1000>Date.parse(new Date()) ? "" :
             <div className="col-6 offset-md-3 h5">
               <label forhtml="amount">
                 Deposit Amount: 
               </label>
               <input className="form-control" type="number" id="amount" min={0.01} step={0.01} {...register("amount",{min:0.01, required:true})} />
             </div>
+            }
+            
             {walletStore.selectedAddress === "" ? <div className="col-6 offset-md-3 primary">you should connect your wallet</div>:
               <div className="col-6 offset-md-3">
                 <span>Your Address: {walletStore.selectedAddress}    <br/>balance: {walletStore.balanceInEther} Matic</span>
@@ -169,9 +172,12 @@ function Deposit() {
             </div>:""}
             
             <div className="clearfix" style={{"marginBottom":"20px"}}></div>
+            {location.state.startTime*1000>Date.parse(new Date()) ?<div className=""></div> :
             <div className="col-6 offset-md-3 text-center">
-              <button type="submit" className="btn btn-primary">Deposit Submit</button>
-            </div>
+            <button type="submit" className="btn btn-primary">Deposit Submit</button>
+          </div>
+            }
+            
           </form>
       </div>
     )
