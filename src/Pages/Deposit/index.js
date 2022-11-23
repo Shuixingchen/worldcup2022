@@ -144,7 +144,7 @@ function Deposit() {
               </div>
             </div>
             <div className="clearfix" style={{"marginBottom":"10px"}}></div>
-            {location.state.startTime*1000>Date.parse(new Date()) ? "" :
+            {location.state.startTime*1000<Date.parse(new Date()) ? "" :
             <div className="col-6 offset-md-3 h5">
               <label forhtml="amount">
                 Deposit Amount: 
@@ -172,7 +172,7 @@ function Deposit() {
             </div>:""}
             
             <div className="clearfix" style={{"marginBottom":"20px"}}></div>
-            {location.state.startTime*1000>Date.parse(new Date()) ?<div className=""></div> :
+            {location.state.startTime*1000<Date.parse(new Date()) ?<div className=""></div> :
             <div className="col-6 offset-md-3 text-center">
             <button type="submit" className="btn btn-primary">Deposit Submit</button>
           </div>

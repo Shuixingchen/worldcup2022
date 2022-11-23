@@ -106,8 +106,11 @@ function Home(){
                   <td><img src={item.PlayAIcon} alt="" />{item.PlayA}</td>
                   <td>VS</td>
                   <td><img src={item.PlayBIcon} alt="" />{item.PlayB}</td>
-                  <td><button onClick={(e)=>{jumpToDeposit(item)}}>Deposit</button></td>
-                  {/* <td><Link to="/deposit" state={{}}><button>Deposit</button></Link></td> */}
+                  {item.StartTime*1000 < Date.parse(new Date()) ? 
+                  <td><button className="btn btn-secondary" onClick={(e)=>{jumpToDeposit(item)}}>View</button></td>
+                  :
+                  <td><button className="btn btn-primary" onClick={(e)=>{jumpToDeposit(item)}}>Deposit</button></td>
+                  }
                   </tr>
                 ))}
             </tbody>
