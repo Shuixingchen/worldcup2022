@@ -7,6 +7,7 @@ import {showDate} from '../../Components/Utils/time'
 import walletStore from '../../store/WalletStore';
 import teams from '../../json/teams.json'
 import GameFactoryABI from '../../abi/GameFactory.json';
+import aa from '../../assets/images/1hy9ek4dOIffYULM6k1fqg_48x48.png'
 
 function Home(){
   const [list,setList] = useState([])
@@ -103,7 +104,8 @@ function Home(){
                 {list.map((item) => (
                   <tr key={item.ID}>
                   <td scope="row">{showDate(item.StartTime)}</td>
-                  <td><img src={item.PlayAIcon} alt="" />{item.PlayA}</td>
+                  <td><img src={aa} alt="" />{item.PlayA}</td>
+                  {/* <td><img src={require('../../'+item.PlayAIcon)} alt="" />{item.PlayA}</td> */}
                   <td>VS</td>
                   <td><img src={item.PlayBIcon} alt="" />{item.PlayB}</td>
                   {item.StartTime*1000 < Date.parse(new Date()) ? 

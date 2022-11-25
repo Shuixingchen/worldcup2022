@@ -2,193 +2,193 @@
     {
         "id": 1,
         "name": "Qatar",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/h0FNA5YxLzWChHS5K0o4gw_48x48.png",
+        "icon": "assets/images/h0FNA5YxLzWChHS5K0o4gw_48x48.png",
         "group": "A"
     },
     {
         "id": 2,
         "name": "Ecuador",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/AKqvkBpIyr-iLOK7Ig7-yQ_48x48.png",
+        "icon": "assets/images/AKqvkBpIyr-iLOK7Ig7-yQ_48x48.png",
         "group": ""
     },
     {
         "id": 3,
         "name": "Senegal",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_48x48.png",
+        "icon": "assets/images/zw3ac5sIbH4DS6zP5auOkQ_48x48.png",
         "group": ""
     },
     {
         "id": 4,
         "name": "Netherlands",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png",
+        "icon": "assets/images/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png",
         "group": ""
     },
     {
         "id": 5,
         "name": "England",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png",
+        "icon": "assets/images/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png",
         "group": "B"
     },
     {
         "id": 6,
         "name": "Iran",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/1oq8Fy7ETpBpZNaCA22ArQ_48x48.png",
+        "icon": "assets/images/1oq8Fy7ETpBpZNaCA22ArQ_48x48.png",
         "group": "B"
     },
     {
         "id": 7,
         "name": "USA",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/wj9uZvn_vZrelLFGH8fnPA_48x48.png",
+        "icon": "assets/images/wj9uZvn_vZrelLFGH8fnPA_48x48.png",
         "group": "B"
     },
     {
         "id": 8,
         "name": "Wales",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/1JjnDm6Es30LryHzbudyEw_48x48.png",
+        "icon": "assets/images/1JjnDm6Es30LryHzbudyEw_48x48.png",
         "group": "B"
     },
     {
         "id": 9,
         "name": "Argentina",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_48x48.png",
+        "icon": "assets/images/1xBWyjjkA6vEWopPK3lIPA_48x48.png",
         "group": ""
     },
     {
         "id": 10,
         "name": "Saudi Arabia",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png",
+        "icon": "assets/images/QoAJxO46fHid3_T-7nRZ0Q_48x48.png",
         "group": "C"
     },
     {
         "id": 11,
         "name": "Mexico",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_48x48.png",
+        "icon": "assets/images/yJF9xqmUGenD8108FJbg9A_48x48.png",
         "group": "C"
     },
     {
         "id": 12,
         "name": "Poland",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/yTS_Piy3M1wUBnqU0n5aAw_48x48.png",
+        "icon": "assets/images/yTS_Piy3M1wUBnqU0n5aAw_48x48.png",
         "group": "C"
     },
     {
         "id": 13,
         "name": "France",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/z3JEQB3coEAGLCJBEUzQ2A_48x48.png",
+        "icon": "assets/images/z3JEQB3coEAGLCJBEUzQ2A_48x48.png",
         "group": "D"
     },
     {
         "id": 14,
         "name": "Australia",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/jSgw5z0EPOLzdUi-Aomq7Q_48x48.png",
+        "icon": "assets/images/jSgw5z0EPOLzdUi-Aomq7Q_48x48.png",
         "group": "D"
     },
     {
         "id": 15,
         "name": "Denmark",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/LaOvu-pyRqRso6uzff55XA_48x48.png",
+        "icon": "assets/images/LaOvu-pyRqRso6uzff55XA_48x48.png",
         "group": ""
     },
     {
         "id": 16,
         "name": "Tunisia",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/Xs33c9XVUJBX0IkeFn_bIw_48x48.png",
+        "icon": "assets/images/Xs33c9XVUJBX0IkeFn_bIw_48x48.png",
         "group": "D"
     },
     {
         "id": 17,
         "name": "Spain",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_48x48.png",
+        "icon": "assets/images/5hLkf7KFHhmpaiOJQv8LmA_48x48.png",
         "group": "E"
     },
     {
         "id": 18,
         "name": "Costa Rica",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/ixZiM5pj2IvvYc15k-zfeQ_48x48.png",
+        "icon": "assets/images/ixZiM5pj2IvvYc15k-zfeQ_48x48.png",
         "group": "E"
     },
     {
         "id": 19,
         "name": "Germany",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_48x48.png",
+        "icon": "assets/images/h1FhPLmDg9AHXzhygqvVPg_48x48.png",
         "group": "E"
     },
     {
         "id": 20,
         "name": "Japan",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/by4OltvtZz7taxuQtkiP3A_48x48.png",
+        "icon": "assets/images/by4OltvtZz7taxuQtkiP3A_48x48.png",
         "group": "E"
     },
     {
         "id": 21,
         "name": "Belgium",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/6SF7yEoB60bU5knw-M7R5Q_48x48.png",
+        "icon": "assets/images/6SF7yEoB60bU5knw-M7R5Q_48x48.png",
         "group": "F"
     },
     {
         "id": 22,
         "name": "Canada",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/H23oIEP6qK-zNc3O8abnIA_48x48.png",
+        "icon": "assets/images/H23oIEP6qK-zNc3O8abnIA_48x48.png",
         "group": "F"
     },
     {
         "id": 23,
         "name": "Morocco",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/I3gt2Ew39ux3GGdZ-4JE3g_48x48.png",
+        "icon": "assets/images/I3gt2Ew39ux3GGdZ-4JE3g_48x48.png",
         "group": "F"
     },
     {
         "id": 24,
         "name": "Croatia",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_48x48.png",
+        "icon": "assets/images/9toerdOg8xW4CRhDaZxsyw_48x48.png",
         "group": "F"
     },
     {
         "id": 25,
         "name": "Brazil",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/zKLzoJVYz0bb6oAnPUdwWQ_48x48.png",
+        "icon": "assets/images/zKLzoJVYz0bb6oAnPUdwWQ_48x48.png",
         "group": "G"
     },
     {
         "id": 26,
         "name": "Serbia",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/xyh1vmZ-xJH2iJCKjqS1Ow_48x48.png",
+        "icon": "assets/images/xyh1vmZ-xJH2iJCKjqS1Ow_48x48.png",
         "group": "G"
     },
     {
         "id": 27,
         "name": "Switzerland",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/1hy9ek4dOIffYULM6k1fqg_48x48.png",
+        "icon": "assets/images/1hy9ek4dOIffYULM6k1fqg_48x48.png",
         "group": "G"
     },
     {
         "id": 28,
         "name": "Cameroon",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/fmHyTSbJ-cYbY6WJzvqaZQ_48x48.png",
+        "icon": "assets/images/fmHyTSbJ-cYbY6WJzvqaZQ_48x48.png",
         "group": "G"
     },
     {
         "id": 29,
         "name": "Portugal",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_48x48.png",
+        "icon": "assets/images/HJ3_2c4w791nZJj7n-Lj3Q_48x48.png",
         "group": "H"
     },
     {
         "id": 30,
         "name": "Ghana",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/VJQ1emg0TOubjGnap4vWuw_48x48.png",
+        "icon": "assets/images/VJQ1emg0TOubjGnap4vWuw_48x48.png",
         "group": "H"
     },
     {
         "id": 31,
         "name": "Uruguay",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png",
+        "icon": "assets/images/KnSUdQWiGRoy89q4x85IgA_48x48.png",
         "group": "H"
     },
     {
         "id": 32,
         "name": "South Korea",
-        "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/Uu5pwNmMHGd5bCooKrS3Lw_48x48.png",
+        "icon": "assets/images/Uu5pwNmMHGd5bCooKrS3Lw_48x48.png",
         "group": "H"
     }
     
